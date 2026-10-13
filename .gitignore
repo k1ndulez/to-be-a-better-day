@@ -1,0 +1,40 @@
+# ---- Keil 编译中间产物 ----
+*.o
+*.d
+*.crf
+*.dep
+*.lnp
+*.axf
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+*.htm
+*.bak
+*.scvd
+
+# ---- Keil 自动生成的目录 ----
+Objects/
+Listings/
+DebugConfig/
+RTE/
+
+# ---- Keil 的本地界面配置 ----
+*.uvguix.*
+*.uvoptx
+*.uvopt.bak
+*.uvproj.bak
+JLinkLog.txt
+JLinkSettings.ini
+
+# ---- 编辑器 / 系统杂项 ----
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+
+# ---- 误入的临时文件 ----
+*.damaged
+*.iex
+*.sct
