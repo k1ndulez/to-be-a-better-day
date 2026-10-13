@@ -3,7 +3,9 @@
 
 #include "stm32f10x.h"
 
+
 void uart1_init(void);
 void uart1_send_string(char *str);
+void uart1_send_string_better(char *str);
 
 #endif

@@ -42,7 +42,7 @@ uart1_init();
 		}//锯齿值
 
 		snprintf(buf, sizeof(buf), "%d,%d\r\n" , sin_tab[phase], ramp);
-		uart1_send_string(buf);//发送
+		uart1_send_string_better(buf);
 		Delay_ms(10);
 	}		
 }
