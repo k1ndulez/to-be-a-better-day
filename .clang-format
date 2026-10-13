@@ -1,0 +1,46 @@
+# clang-format 配置文件
+# 放置位置：放到【工程根目录】（例如 C:\Users\liangshanyou\Documents\software_F1D\）
+# 文件名就是 .clang-format（开头那个点不能少）
+# clang-format 会自动向上层目录查找最近的这一份来用
+
+BasedOnStyle: LLVM
+
+# ---------- 缩进 ----------
+IndentWidth: 4
+TabWidth: 4
+# UseTab: Never  -> 用 4 个空格缩进（工程里的 CAN_receive.c 就是"0 个 Tab"）
+# UseTab: Always -> 用 Tab 缩进（你现在的 uart.c 是这样）
+# 二选一，改下面这一行即可：
+UseTab: Never
+
+# ---------- 换行 ----------
+ColumnLimit: 0
+
+# ---------- 大括号 ----------
+# Allman -> 大括号另起一行（你现在的写法）
+#   void f()
+#   {
+#       ...
+#   }
+# Attach -> 大括号跟在行尾（LLVM 默认）
+BreakBeforeBraces: Allman
+
+# ---------- 指针 ----------
+# Right -> char *str（跟变量走，和你现在的代码一致）
+# Left  -> char* str
+PointerAlignment: Right
+
+# ---------- 短语句 ----------
+# 允许 if (x) y; 写在一行（你现在的写法）
+AllowShortIfStatementsOnASingleLine: true
+AllowShortLoopsOnASingleLine: false
+# 函数体永远不压成一行
+AllowShortFunctionsOnASingleLine: None
+
+# ---------- 空行 ----------
+MaxEmptyLinesToKeep: 1
+
+# ---------- 空格 ----------
+SpaceBeforeParens: ControlStatements
+SpaceAfterCStyleCast: false
+Cpp11BracedListStyle: false
