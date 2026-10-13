@@ -493,6 +493,16 @@
               <FileType>5</FileType>
               <FilePath>..\user\stm32f10x_it.h</FilePath>
             </File>
+            <File>
+              <FileName>uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\uart.c</FilePath>
+            </File>
+            <File>
+              <FileName>uart.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\uart.h</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>
